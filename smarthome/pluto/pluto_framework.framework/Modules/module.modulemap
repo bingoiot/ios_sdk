@@ -1,0 +1,6 @@
+framework module pluto_framework {
+  umbrella header "pluto_framework.h"
+
+  export *
+  module * { export * }
+}

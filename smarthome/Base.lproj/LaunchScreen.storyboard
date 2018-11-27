@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mo9-dn-Oxd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="mVr-bw-LVR">
+            <objects>
+                <viewController storyboardIdentifier="LoginStoryboard" id="mo9-dn-Oxd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fx4-Gp-Szy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jGN-TC-fWq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="back_root.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-tp-dDd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJr-gD-BqQ">
+                                <rect key="frame" x="139" y="321.5" width="97" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.37116532320583662" green="1" blue="0.050194336367503478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jGN-TC-fWq" secondAttribute="trailing" id="1Vi-U4-KeW"/>
+                            <constraint firstItem="jGN-TC-fWq" firstAttribute="centerX" secondItem="fx4-Gp-Szy" secondAttribute="centerX" id="1vN-tA-Xz0"/>
+                            <constraint firstItem="qJr-gD-BqQ" firstAttribute="centerX" secondItem="fx4-Gp-Szy" secondAttribute="centerX" id="50P-4N-MG7"/>
+                            <constraint firstItem="jGN-TC-fWq" firstAttribute="centerY" secondItem="fx4-Gp-Szy" secondAttribute="centerY" id="VT5-Or-aIp"/>
+                            <constraint firstItem="jGN-TC-fWq" firstAttribute="leading" secondItem="fx4-Gp-Szy" secondAttribute="leading" id="a2s-9y-b5O"/>
+                            <constraint firstItem="jGN-TC-fWq" firstAttribute="top" secondItem="fx4-Gp-Szy" secondAttribute="top" id="gC9-BC-mWl"/>
+                            <constraint firstItem="qJr-gD-BqQ" firstAttribute="centerY" secondItem="fx4-Gp-Szy" secondAttribute="centerY" id="sdW-0F-vzN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hPr-7j-zRu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMb-dD-UoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_root.jpg" width="600" height="951"/>
+    </resources>
+</document>
